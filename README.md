@@ -22,3 +22,9 @@ optional arguments:
   -d, --debug           increase logging verbosity to debug
   -p PATH, --path PATH  path to destination folder we save the dashboards
   ```
+Example run
+```
+exporter --hostname "localhost" --port 4242 --use-https // This will export all dashboards to ./exports folder
+
+exporter --hostname "localhost" --port 4242 --use-https --uid-filter ID1 ID2 ID3 ID4 --path ./dashboards // Will export dashboards with given UIDs to given folder
+```
